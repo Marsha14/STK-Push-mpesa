@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $consumerSecret = 'zfKeFkkepWtG92XhYf5IdeyxOSBRJ5Xzi8LxJQ5gZDwhkq1TKYcSAWgAvAuxpccj';
     $shortcode = '174379'; // Sandbox
     $passkey = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919';
-    $callbackURL = 'https://yourdomain.com/callback.php'; // Change to your callback URL
+    $callbackURL = 'https://marsha14.github.io/STK-Push-mpesa/callback.php'; // Change to your callback URL
 
     $amount = $_POST['amount'];
     $phoneNumber = $_POST['phone'];
@@ -76,4 +76,5 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo "Invalid request method.";
 }
 ?>
+
 
