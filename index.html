@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Trouser - MPesa Payment</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #121212;
+            color: #eee;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .payment-container {
+            background: #1f1f1f;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ffcc00;
+            margin-bottom: 20px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+
+        input[type="text"], input[type="number"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            font-size: 1em;
+            background: #2a2a2a;
+            color: #eee;
+        }
+
+        input::placeholder {
+            color: #aaa;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background: #ffcc00;
+            color: #121212;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 1em;
+        }
+
+        button:hover {
+            background: #e6b800;
+        }
+
+        .note {
+            margin-top: 15px;
+            font-size: 0.9em;
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+
+<div class="payment-container">
+    <h1>Buy Trouser</h1>
+    <p>Price: KES 800</p>
+
+    <form action="daraja.php" method="POST">
+        <input type="text" name="phone" placeholder="Enter your phone number" required>
+        <input type="hidden" name="amount" value="800">
+        <button type="submit">Pay with MPesa</button>
+    </form>
+
+    <p class="note">You will receive an MPesa prompt on your phone to complete the payment.</p>
+</div>
+
+</body>
+</html>
