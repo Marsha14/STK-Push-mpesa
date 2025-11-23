@@ -3,10 +3,10 @@
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
-    $consumerKey = 'YOUR_CONSUMER_KEY';
-    $consumerSecret = 'YOUR_CONSUMER_SECRET';
+    $consumerKey = 'qBGQt1jY3XEGjUKc9Pv0mdv2XD3Imh2JXpVZ3hMeS0UoEYwi';
+    $consumerSecret = 'zfKeFkkepWtG92XhYf5IdeyxOSBRJ5Xzi8LxJQ5gZDwhkq1TKYcSAWgAvAuxpccj';
     $shortcode = '174379'; // Sandbox
-    $passkey = 'YOUR_PASSKEY';
+    $passkey = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919';
     $callbackURL = 'https://yourdomain.com/callback.php'; // Change to your callback URL
 
     $amount = $_POST['amount'];
@@ -76,3 +76,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     echo "Invalid request method.";
 }
 ?>
+
